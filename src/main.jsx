@@ -10,6 +10,7 @@ import {
 import Error from './components/Error';
 import Blog from './components/Blog/Blog';
 import Home from './components/Home/Home';
+import Details from './components/Details';
 
 const router = createBrowserRouter([
   {
@@ -19,7 +20,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Home></Home>
+        element: <Home/>
       },
       {
         path: "/home",
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
       {
         path: "/blog",
         element: <Blog/>
+      },
+      {
+        path: "/details",
+        element: <Details/>
       }
     ]
   },
