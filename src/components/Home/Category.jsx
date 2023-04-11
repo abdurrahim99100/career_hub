@@ -11,7 +11,7 @@ const Category = () => {
                 <h4 className='text-4xl font-semibold'>Job Category List</h4>
                 <p className='text-gray-400 py-2'>Explore thousands of job opportunities with all the information you need. Its your future</p>           
             </div>
-            <div className='my-24 flex justify-between'>
+            <div className='my-24 md:flex justify-between'>
                 <div className='w-48 h-40 flex flex-col justify-center items-center bg-gray-100 shadow-md rounded'>
                     <img src={Calculator} alt="" />
                     <h5>Creative Design</h5>

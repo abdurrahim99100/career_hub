@@ -1,5 +1,5 @@
 import React from 'react';
-import { PieChart, Pie, Sector, Cell, ResponsiveContainer } from 'recharts';
+import { PieChart, Pie, Tooltip } from 'recharts';
 
 
 const Pchart = () => {
@@ -44,17 +44,6 @@ const Pchart = () => {
         <div className='flex justify-center items-center my-44'>
             <PieChart width={400} height={400} data={data}>
                 <Pie
-                    dataKey= "name"
-                    startAngle={360}
-                    endAngle={0}
-                    data={data}
-                    cx="50%"
-                    cy="50%"
-                    outerRadius={80}
-                    fill="#8884d8"
-                    label
-                />
-                <Pie
                     dataKey="value"
                     startAngle={360}
                     endAngle={0}
@@ -65,6 +54,7 @@ const Pchart = () => {
                     fill="#8884d8"
                     label
                 />
+                <Tooltip/>
             </PieChart>
         </div>
     );
