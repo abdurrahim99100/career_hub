@@ -1,4 +1,5 @@
 import React from 'react';
+// import hero icon;
 import { CurrencyDollarIcon, MapPinIcon, PhoneIcon, InboxIcon, BriefcaseIcon } from '@heroicons/react/24/solid';
 
 const ApplyJobDetails = ({cart}) => {
