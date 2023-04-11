@@ -11,6 +11,7 @@ import Error from './components/Error';
 import Blog from './components/Blog/Blog';
 import Home from './components/Home/Home';
 import Details from './components/Details';
+import Apply from './components/Apply';
 
 const router = createBrowserRouter([
   {
@@ -20,20 +21,27 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Home/>
-      },
-      {
-        path: "/home",
         element: <Home/>,
-        loader: () => fetch('data.json')
+        loader: () => fetch('/data.json')
       },
       {
-        path: "/blog",
+        path: "home",
+        element: <Home/>,
+        loader: () => fetch('/data.json')
+      },
+      {
+        path: "applied",
+        element: <Apply/>,
+        loader: () => fetch('/data.json')
+      },
+      {
+        path: "blog",
         element: <Blog/>
       },
       {
-        path: "/details",
-        element: <Details/>
+        path: "details/:id",
+        element: <Details/>,
+        loader: () => fetch('/data.json')
       }
     ]
   },

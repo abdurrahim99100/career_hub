@@ -1,16 +1,16 @@
 import React from 'react';
 import { CurrencyDollarIcon, MapPinIcon } from '@heroicons/react/24/solid';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
-const FeaturedJobs = ({data}) => {
-    // console.log(data);  
-    const totalData = data;
-const handelClickToCart = (id) =>{
-    console.log(id);
-}
+const FeaturedJobs = ({ data }) => {
+    // console.log(data);
+    const navigate = useNavigate();
+
+    const clickData = data;
+    // console.log(clickData);
 
 
-    const {id, address, company, jobtitle, salary, picture, remote, ful_time} = data;
+    const { id, address, company, jobtitle, salary, picture, remote, ful_time } = data;
     return (
         <div className='bg-slate-100 p-10 rounded-xl'>
             <img className='w-60 h-40' src={picture} alt="" />
@@ -23,7 +23,7 @@ const handelClickToCart = (id) =>{
                 <p className='flex'><CurrencyDollarIcon className="h-6 w-6 text-blue-500" /> Salary: {salary}</p>
             </div>
             {/* <button>View Details</button> */}
-            <Link className='btn-primary' onClick={ () => handelClickToCart(id)} to='/details'>View Details</Link>
+            <button className='btn-primary' onClick={() => navigate(`/details/${id}`)}>View Details</button>
         </div>
     );
 };
