@@ -12,6 +12,7 @@ import Blog from './components/Blog/Blog';
 import Home from './components/Home/Home';
 import Details from './components/Details';
 import Apply from './components/Apply';
+import Pchart from './components/Pchart';
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
         path: "home",
         element: <Home/>,
         loader: () => fetch('/data.json')
+      },
+      {
+        path: "statistics",
+        element: <Pchart/>
       },
       {
         path: "applied",
