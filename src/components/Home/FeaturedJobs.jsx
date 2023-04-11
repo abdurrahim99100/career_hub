@@ -3,12 +3,12 @@ import { CurrencyDollarIcon, MapPinIcon } from '@heroicons/react/24/solid';
 import { Link, useNavigate } from 'react-router-dom';
 
 const FeaturedJobs = ({ data }) => {
+    // bangladesh;
     // console.log(data);
     const navigate = useNavigate();
 
     const clickData = data;
     // console.log(clickData);
-
 
     const { id, address, company, jobtitle, salary, picture, remote, ful_time } = data;
     return (

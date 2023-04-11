@@ -31,7 +31,6 @@ const getStoreCart = () =>{
         jobCart = JSON.parse(storeCart)
     }
 
-
     return jobCart;
 }
 export { addToDb, getStoreCart };
