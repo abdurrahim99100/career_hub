@@ -7,7 +7,6 @@ const Apply = () => {
     const fetchData = useLoaderData();
     const jobCart = getStoreCart();
 
-
     let applyCart = [];
     for(const id in jobCart){
         const findJob = fetchData.find(cart => cart.id === id)
