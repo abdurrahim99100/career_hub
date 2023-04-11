@@ -20,8 +20,8 @@ const addToDb = id => {
 }
 
 
-
 // get store cart;
+// get store cart ;
 const getStoreCart = () =>{
     
     let jobCart = {};
