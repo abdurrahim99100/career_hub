@@ -3,7 +3,6 @@ import { CurrencyDollarIcon, MapPinIcon, PhoneIcon, InboxIcon, BriefcaseIcon } f
 
 
 const DetailsPage = ({cart, handelAddToJob}) => {
-    // console.log(cart);
     const {id, company, education_requerments, email, experiences, ful_time, job_descreption, job_responsibility, jobtitle, name, phone, picture, salary, address} = cart;
     return (
         <div>
