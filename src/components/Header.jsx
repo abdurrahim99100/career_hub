@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
-        <div className='flex my-4 justify-between'>
+        <div className='flex flex-wrap my-4 justify-between'>
             <div>
                 <h2 className='text-2xl font-bold'>Bangladesh Jobs L.T.D</h2>
             </div>

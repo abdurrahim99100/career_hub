@@ -3,7 +3,7 @@ import React from 'react';
 import { CurrencyDollarIcon, MapPinIcon, PhoneIcon, InboxIcon, BriefcaseIcon } from '@heroicons/react/24/solid';
 
 const ApplyJobDetails = ({cart}) => {
-    console.log(cart);
+    // console.log(cart);
     const {address, company, ful_time, remote, jobtitle, picture, salary} = cart;
     return (
         <div className='flex justify-between items-center mb-10 p-10 border-2 border-gray-300 rounded bg-gray-50'>
